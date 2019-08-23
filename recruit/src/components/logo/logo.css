@@ -1,0 +1,11 @@
+.logo-container {
+    text-align: center;
+    /*background-color: #fff;*/
+}
+
+.logo-img {
+    width: 92%;
+    height: 250px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
