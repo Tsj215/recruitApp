@@ -13,12 +13,12 @@ export default class HeaderSelector extends Component {
   }
 
   state = {
-    icon: null //图片对象, 默认没有值
+    icon: null
   }
 
   constructor(props) {
     super(props)
-    // 准备需要显示的列表数据
+
     this.headerList = []
     for (let i = 0; i < 20; i++) {
       this.headerList.push({
@@ -29,9 +29,7 @@ export default class HeaderSelector extends Component {
   }
 
   handleClick = ({text, icon}) => {
-    // 更新当前组件状态
     this.setState({icon})
-    // 调用函数更新父组件状态
     this.props.setHeader(text)
   }
 
